@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace TextFileConversion
 {
@@ -6,10 +7,28 @@ namespace TextFileConversion
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, please enter the file path and name of the file to be processed.");
-            Console.ReadLine();
+            Console.WriteLine("Hello, we are pleased to welcome you! Thank you for choosing our app.");
+
+            while (true)
+            {
+                Console.WriteLine("Please enter the file path and file name to process.");
+                
+                var PathFile = Console.ReadLine();
+
+                if (System.IO.File.Exists(PathFile))
+                {
+
+                }
+                else
+                {
+                    Console.WriteLine("This file does not exist.Please check the correctness of the entered data.");
+                    
+                }
+
+            }
 
             
+
         }
     }
 }
