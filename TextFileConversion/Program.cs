@@ -21,7 +21,7 @@ namespace TextFileConversion
                     using (StreamReader sr = new StreamReader(PathFile))
                     {
                         string text = sr.ReadToEnd();
-                        using ()
+                        using () 
                         {
 
                         }
