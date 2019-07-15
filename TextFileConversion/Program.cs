@@ -17,7 +17,17 @@ namespace TextFileConversion
 
                 if (System.IO.File.Exists(PathFile))
                 {
+                    Console.WriteLine("File processing.");
+                    using (StreamReader sr = new StreamReader(PathFile))
+                    {
+                        string text = sr.ReadToEnd();
+                        using ()
+                        {
 
+                        }
+                    }
+
+                    break;
                 }
                 else
                 {
@@ -26,7 +36,7 @@ namespace TextFileConversion
                 }
 
             }
-
+            Console.ReadLine();
             
 
         }
